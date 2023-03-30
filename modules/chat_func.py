@@ -286,7 +286,7 @@ def predict(
     else:
         link_references = ""
 
-    if len(openai_api_key) != 51:
+    if len(openai_api_key) != 19:
         status_text = standard_error_msg + no_apikey_msg
         logging.info(status_text)
         chatbot.append((inputs, ""))
